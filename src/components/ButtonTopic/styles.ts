@@ -4,7 +4,7 @@ import { darken, lighten } from 'polished'
 import { ButtonTopicProps } from '.'
 
 const wrapperModifiers = {
-  verified: (theme: DefaultTheme) => css`
+  verified: () => css`
     color: #22863a;
     border: 1px solid #22863a;
     text-align: center;
@@ -12,16 +12,19 @@ const wrapperModifiers = {
   `,
 
   secondary: (theme: DefaultTheme) => css`
-    color: ${theme.colors.secondary};
+    color: ${theme.colors.black};
+    border: none;
+    background: #ddd;
+    padding: 0.1rem 0.6rem;
   `,
 
   default: (theme: DefaultTheme) => css`
     color: ${theme.colors.primary};
     border: none;
-    background: ${lighten(0.03, '#ddeeff')};
+    background: #f1f8ff;
 
     &:hover {
-      background: ${darken(0.01, '#ddeeff')};
+      background: ${darken(0.04, '#f1f8ff')};
     }
   `
 }
@@ -29,10 +32,10 @@ const wrapperModifiers = {
 export const Wrapper = styled.button<ButtonTopicProps>`
   ${({ theme, typeButton }) => css`
     font-size: ${theme.font.sizes.xsmall};
-    cursor: pointer;
     border-radius: ${theme.border.xxradius};
     padding: 0.1rem 1rem;
     height: 2.2rem;
+    cursor: pointer;
 
     ${!!typeButton && wrapperModifiers[typeButton](theme)};
   `};
