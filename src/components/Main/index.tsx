@@ -1,8 +1,14 @@
 import * as S from './styles'
+import Headline from '../Headline'
 
 const Main = () => (
   <S.Wrapper>
-    <h1>Main</h1>
+    <Headline
+      title="Teste"
+      subtitle="sbu"
+      local="Brasil"
+      site="www.brasil.com"
+    />
   </S.Wrapper>
 )
 
