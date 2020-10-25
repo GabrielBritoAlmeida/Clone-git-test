@@ -36,7 +36,12 @@ export const Wrapper = styled.button<ButtonTopicProps>`
     border-radius: ${theme.border.xxradius};
     padding: 0.1rem 1rem;
     height: 2.3rem;
+    margin-right: ${theme.spacings.min};
     cursor: pointer;
+
+    :focus {
+      outline: none;
+    }
 
     ${!!typeButton && wrapperModifiers[typeButton](theme)};
   `};
