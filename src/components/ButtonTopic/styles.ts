@@ -32,12 +32,16 @@ const wrapperModifiers = {
 
 export const Wrapper = styled.button<ButtonTopicProps>`
   ${({ theme, typeButton }) => css`
+    display: flex;
+    align-items: center;
+
     font-size: ${theme.font.sizes.xsmall};
     border-radius: ${theme.border.xxradius};
     padding: 0.1rem 1rem;
     height: 2.3rem;
     margin-right: ${theme.spacings.min};
     cursor: pointer;
+    text-decoration: none;
 
     :focus {
       outline: none;
