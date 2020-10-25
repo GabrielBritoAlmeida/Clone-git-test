@@ -6,4 +6,8 @@ export default {
   component: SectionSearch
 } as Meta
 
-export const Default: Story = (args) => <SectionSearch {...args} />
+export const Default: Story = (args) => (
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <SectionSearch {...args} />
+  </div>
+)

@@ -22,6 +22,7 @@ const wrapperModifiers = {
     color: ${theme.colors.primary};
     border: none;
     background: #f1f8ff;
+    transition: background 0.3s;
 
     &:hover {
       background: ${darken(0.04, '#f1f8ff')};
@@ -34,7 +35,7 @@ export const Wrapper = styled.button<ButtonTopicProps>`
     font-size: ${theme.font.sizes.xsmall};
     border-radius: ${theme.border.xxradius};
     padding: 0.1rem 1rem;
-    height: 2.2rem;
+    height: 2.3rem;
     cursor: pointer;
 
     ${!!typeButton && wrapperModifiers[typeButton](theme)};
