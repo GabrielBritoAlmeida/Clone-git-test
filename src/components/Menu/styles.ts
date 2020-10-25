@@ -51,7 +51,7 @@ export const ItemMenu = styled.li<ItemMenuProps>`
           bottom: -1rem;
           display: block;
           height: 0.2rem;
-          background-color: ${!active && '#eee'};
+          background-color: ${!active && '#ddd'};
           animation: hoverAnimation 0.2s forwards;
         }
 
