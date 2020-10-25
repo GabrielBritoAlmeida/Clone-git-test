@@ -1,5 +1,5 @@
 import styled, { css, DefaultTheme } from 'styled-components'
-import { darken, lighten } from 'polished'
+import { darken } from 'polished'
 
 import { ButtonTopicProps } from '.'
 
