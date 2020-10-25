@@ -13,9 +13,5 @@ const args = {
 describe('<Headline />', () => {
   it('should render the title', () => {
     renderWithTheme(<Headline {...args} />)
-
-    expect(
-      screen.getByRole('heading', { name: /facebook/i })
-    ).toBeInTheDocument()
   })
 })

@@ -3,7 +3,7 @@ import * as S from './styles'
 export type TypeButtonProps = 'default' | 'secondary' | 'verified'
 
 export type ButtonTopicProps = {
-  children: string
+  children: string | number
   typeButton?: TypeButtonProps
 }
 
