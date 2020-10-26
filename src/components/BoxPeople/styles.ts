@@ -2,7 +2,9 @@ import styled, { css } from 'styled-components'
 
 import { ArrowIosForwardOutline } from '@styled-icons/evaicons-outline/ArrowIosForwardOutline'
 
-export const Wrapper = styled.main`
+import { WrapperAvatar } from '../Avatar/styles'
+
+export const Wrapper = styled.div`
   ${({ theme }) => css`
     border: 0.1rem solid #eee;
     border-radius: ${theme.border.radius};
@@ -59,4 +61,13 @@ export const Title = styled.div`
     height: 2.3rem;
     margin-bottom: ${theme.spacings.small};
   `}
+`
+export const BoxAvatar = styled.div`
+  display: inline-flex;
+  max-width: 30rem;
+  flex-wrap: wrap;
+
+  ${WrapperAvatar} {
+    margin: 0.1rem;
+  }
 `

@@ -6,7 +6,7 @@ export type AvatarProps = {
 }
 
 const Avatar = ({ url, link, ...props }: AvatarProps) => (
-  <S.Wrapper {...props}>
+  <S.WrapperAvatar {...props}>
     {!!url && (
       <>
         <a href={link} target="_blank" rel="noopenner, noreferrer">
@@ -14,7 +14,7 @@ const Avatar = ({ url, link, ...props }: AvatarProps) => (
         </a>
       </>
     )}
-  </S.Wrapper>
+  </S.WrapperAvatar>
 )
 
 export default Avatar

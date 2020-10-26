@@ -1,12 +1,14 @@
 import Link from 'next/link'
 
+import Avatar from '../Avatar'
+
 import * as S from './styles'
 
 export type BoxPeopleProps = {
   titulo: string
   count: number | string
   list: Array<{
-    name: string
+    url: string
     link: string
   }>
 }
@@ -24,7 +26,11 @@ const BoxPeople = ({ titulo, count, list = [] }: BoxPeopleProps) => (
         <S.Icon>icon</S.Icon>
       </S.AlignCount>
     </S.AlignTitle>
-    <div>List Avatar</div>
+    <S.BoxAvatar>
+      {list.map((item) => (
+        <Avatar key={item?.link} url={item?.url} link={item?.link} />
+      ))}
+    </S.BoxAvatar>
   </S.Wrapper>
 )
 

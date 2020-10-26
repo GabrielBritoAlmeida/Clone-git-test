@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.div`
   ${({ theme }) => css`
     border: 0.1rem solid #eee;
     border-radius: ${theme.border.radius};
@@ -9,7 +9,7 @@ export const Wrapper = styled.main`
     position: relative;
   `};
 `
-export const Box = styled.main`
+export const Box = styled.div`
   display: inline-flex;
   max-width: 30rem;
   flex-wrap: wrap;

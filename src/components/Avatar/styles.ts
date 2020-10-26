@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
+export const WrapperAvatar = styled.div`
   background-color: #eee;
   height: 4.7rem;
   width: 4.7rem;
