@@ -17,11 +17,15 @@ export const Box = styled.main`
   flex-wrap: wrap;
 `
 
-export const Icon = styled(CircleFill)`
-  ${({ theme }) => css`
+type IconProps = {
+  colorIcon: string
+}
+
+export const Icon = styled(CircleFill)<IconProps>`
+  ${({ theme, colorIcon }) => css`
     width: 1.3rem;
     height: 1.3rem;
-    color: yellow;
+    color: ${colorIcon};
     margin-right: ${theme.spacings.min};
   `};
 `

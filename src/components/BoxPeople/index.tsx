@@ -16,7 +16,7 @@ export type BoxPeopleProps = {
 const BoxPeople = ({ titulo, count, list = [] }: BoxPeopleProps) => (
   <S.Wrapper>
     <S.AlignTitle>
-      <Link href="#">
+      <Link href="https://github.com/orgs/facebook/people">
         <a>
           <S.Title>{titulo}</S.Title>
         </a>
