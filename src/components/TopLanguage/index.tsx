@@ -13,7 +13,7 @@ const TopLanguage = ({ list = [] }: TopLanguageProps) => (
     <S.Box>
       {list.map((item) => (
         <S.Align key={item.name}>
-          <S.Icon /> {item.name}
+          <S.Icon /> <S.Name>{item.name}</S.Name>
         </S.Align>
       ))}
     </S.Box>
