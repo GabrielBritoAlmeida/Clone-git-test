@@ -30,9 +30,9 @@ const TopLanguage = ({ list = [] }: TopLanguageProps) => (
     <S.Title>Top languages</S.Title>
     <S.Box>
       {list.map((item) => (
-        <S.Align key={item.name}>
-          <S.Icon colorIcon={handleColor(item.name)} />
-          <S.Name>{item.name}</S.Name>
+        <S.Align key={item?.name}>
+          <S.Icon colorIcon={handleColor(item?.name)} />
+          <S.Name>{item?.name}</S.Name>
         </S.Align>
       ))}
     </S.Box>

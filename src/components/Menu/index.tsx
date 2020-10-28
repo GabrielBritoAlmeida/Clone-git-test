@@ -4,12 +4,12 @@ import ButtonTopic from '../ButtonTopic'
 import * as S from './styles'
 
 export type MenuProps = {
-  repositories: number
-  membersWithRole: number
+  public_repos?: number
+  membersWithRole?: number
   active?: boolean
 }
 
-const Menu = ({ repositories, membersWithRole, active }: MenuProps) => (
+const Menu = ({ public_repos, membersWithRole, active }: MenuProps) => (
   <S.Container>
     <S.Wrapper>
       <S.List>
@@ -18,8 +18,8 @@ const Menu = ({ repositories, membersWithRole, active }: MenuProps) => (
             <a>
               <S.Image src="/img/icones/repo.svg" alt="icon repo" />
               <S.Name>Repositórios</S.Name>
-              {!!repositories && (
-                <ButtonTopic typeButton="secondary">{repositories}</ButtonTopic>
+              {!!public_repos && (
+                <ButtonTopic typeButton="secondary">{public_repos}</ButtonTopic>
               )}
             </a>
           </Link>

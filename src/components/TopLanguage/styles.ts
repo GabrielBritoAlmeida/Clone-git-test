@@ -9,6 +9,7 @@ export const Wrapper = styled.main`
     padding: ${theme.spacings.small};
     max-width: 30rem;
     position: relative;
+    margin-bottom: 2rem;
   `};
 `
 export const Box = styled.main`

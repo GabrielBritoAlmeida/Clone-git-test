@@ -5,7 +5,7 @@ import Avatar from '../Avatar'
 import * as S from './styles'
 
 export type BoxPeopleProps = {
-  titulo: string
+  titulo?: string
   count: number | string
   list: Array<{
     url: string
@@ -13,7 +13,7 @@ export type BoxPeopleProps = {
   }>
 }
 
-const BoxPeople = ({ titulo, count, list = [] }: BoxPeopleProps) => (
+const BoxPeople = ({ titulo = 'People', count, list = [] }: BoxPeopleProps) => (
   <S.Wrapper>
     <S.AlignTitle>
       <Link href="https://github.com/orgs/facebook/people">

@@ -17,3 +17,14 @@ export const Divider = styled.div<DividerProps>`
     width: ${size ? size : '100%'};
   `}
 `
+
+export const Colum = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+`
+
+export const AlignBox = styled.div`
+  display: block;
+  margin-left: 4.2rem;
+`
