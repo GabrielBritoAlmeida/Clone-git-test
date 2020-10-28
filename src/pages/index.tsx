@@ -1,5 +1,3 @@
-// import { GetStaticProps } from 'next'
-// import axios from 'axios'
 import { HomeProps } from '../types/api'
 
 import Headline from 'components/Headline'
@@ -9,7 +7,7 @@ import RepoInformation from 'components/RepoInformation'
 
 import * as S from './styles'
 
-const Home = ({ repos, orgs }: HomeProps) => (
+const Home = ({ repos, orgs, menu }: HomeProps) => (
   <S.Wrapper>
     <Headline
       name={orgs?.name}
@@ -18,8 +16,8 @@ const Home = ({ repos, orgs }: HomeProps) => (
       blog={orgs?.blog}
     />
     <Menu
-      repositories={orgs.repositories}
-      membersWithRole={orgs.membersWithRole}
+      repositories={menu.repositories}
+      membersWithRole={menu.membersWithRole}
     />
     <S.Divider />
     <SectionSearch />
@@ -33,7 +31,7 @@ const Home = ({ repos, orgs }: HomeProps) => (
           description={item?.description}
           mit={item?.license?.key === 'mit'}
           networks={item?.watchers_count}
-          networksLink="https://github.com/facebook/fbzmq/network/members"
+          networksLink={`https://github.com/facebook/${item?.name}/network/members`}
           stars={item?.stargazers_count}
           starsLink={item?.stargazers_url}
           issues={item?.open_issues_count}
