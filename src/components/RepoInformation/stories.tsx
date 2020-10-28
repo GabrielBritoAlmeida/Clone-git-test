@@ -14,6 +14,7 @@ export const Default: Story<RepoInformationProps> = (args) => (
 
 Default.args = {
   title: 'create-react-app',
+  link: '#link',
   description: 'Set up a modern web app by running one command.',
   networks: 200,
   networksLink: '#link',
@@ -22,8 +23,10 @@ Default.args = {
   issues: 20,
   issuesLink: '#link',
   pull: 8,
+  pullsLink: '#link',
   update: '1 hour',
   graphic: '/img/icones/grafico.svg',
+  language: 'java',
   list: [
     { name: 'react', link: '#react' },
     { name: 'python', link: '#python' },

@@ -90,14 +90,18 @@ export const Language = styled.div`
     display: flex;
     align-items: baseline;
     margin-right: ${theme.spacings.small};
+    text-transform: capitalize;
   `}
 `
+type IconLanguageProps = {
+  colorIcon: string
+}
 
-export const IconLanguage = styled(CircleFill)`
-  ${({ theme }) => css`
+export const IconLanguage = styled(CircleFill)<IconLanguageProps>`
+  ${({ theme, colorIcon }) => css`
     width: 1.3rem;
     height: 1.3rem;
-    color: yellow;
+    color: ${colorIcon};
     margin-right: ${theme.spacings.min};
   `}
 `

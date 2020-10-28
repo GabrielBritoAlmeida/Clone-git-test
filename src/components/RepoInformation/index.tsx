@@ -6,8 +6,9 @@ import * as S from './styles'
 
 export type RepoInformationProps = {
   title: string
+  link: string
   description: string
-  list: Array<{
+  list?: Array<{
     name: string
     link: string
   }>
@@ -19,12 +20,33 @@ export type RepoInformationProps = {
   issues: number
   issuesLink: string
   pull: number
-  update: string
+  pullsLink: string
+  update?: string
   graphic: string
+  language: string
+}
+
+const handleColor = (name: string) => {
+  const expr = name
+  const search = expr.toLowerCase()
+
+  switch (search) {
+    case 'javascript':
+      return '#f1e05a'
+    case 'c++':
+      return '#f34b7d'
+    case 'python':
+      return '#3572a5'
+    case 'ruby':
+      return '#701516'
+    default:
+      return '#ba5af1'
+  }
 }
 
 const RepoInformation = ({
   title,
+  link,
   description,
   list = [],
   mit,
@@ -35,25 +57,29 @@ const RepoInformation = ({
   issues,
   issuesLink,
   pull,
+  pullsLink,
   update,
-  graphic
+  graphic,
+  language
 }: RepoInformationProps) => (
   <S.Wrapper>
     <S.Align>
       <S.AlignBoxTitle>
-        <Link href="#">
+        <Link href={link}>
           <a>
             <S.Title>{title}</S.Title>
           </a>
         </Link>
         <S.Description>{description}</S.Description>
-        <S.ListTopic>
-          {list.map((item) => (
-            <>
-              <ButtonTopic>{item.name}</ButtonTopic>
-            </>
-          ))}
-        </S.ListTopic>
+        {list?.length > 0 && (
+          <S.ListTopic>
+            {list.map((item) => (
+              <>
+                <ButtonTopic>{item?.name}</ButtonTopic>
+              </>
+            ))}
+          </S.ListTopic>
+        )}
       </S.AlignBoxTitle>
       <S.AlignGraphic>
         <S.Graphic src={graphic} />
@@ -61,7 +87,7 @@ const RepoInformation = ({
     </S.Align>
     <S.AlignBoxRepo>
       <S.Language>
-        <S.IconLanguage /> Javascript
+        <S.IconLanguage colorIcon={handleColor(language)} /> {language}
       </S.Language>
       {!!mit && (
         <S.Mit>
@@ -98,7 +124,7 @@ const RepoInformation = ({
         </Link>
       )}
       {!!pull && (
-        <Link href="#">
+        <Link href={pullsLink}>
           <a>
             <S.Pull>
               <S.PullIcon />

@@ -5,8 +5,9 @@ import { ArrowDropDown } from '@styled-icons/material/ArrowDropDown'
 
 export const Wrapper = styled.div`
   display: flex;
-  align-items: center;
   justify-content: flex-start;
+  width: 101rem;
+  padding: 2rem 0;
 `
 
 export const Input = styled.input`

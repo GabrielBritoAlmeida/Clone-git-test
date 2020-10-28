@@ -5,11 +5,11 @@ export default {
   title: 'Headline',
   component: Headline,
   args: {
-    title: 'Facebook',
-    subtitle:
+    name: 'Facebook',
+    description:
       'We are working to build community through open source technology. NB: members must have two-factor auth.',
-    local: 'Menlo Park, California',
-    site: 'https://opensource.fb.com'
+    location: 'Menlo Park, California',
+    blog: 'https://opensource.fb.com'
   }
 } as Meta
 
