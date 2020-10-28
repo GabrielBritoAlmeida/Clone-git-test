@@ -5,34 +5,34 @@ import ButtonTopic from '../ButtonTopic'
 import Link from 'next/link'
 
 export type HeadlineProps = {
-  title?: string
-  subtitle: string
-  local: string
-  site: string
+  login?: string
+  description: string
+  location: string
+  websiteUrl: string
 }
 
 const Headline = ({
-  title = 'Facebook',
-  subtitle,
-  local,
-  site
+  login = 'Facebook',
+  description,
+  location,
+  websiteUrl
 }: HeadlineProps) => (
   <S.Wrapper>
     <Logo />
     <S.Header>
-      <S.Title role="heading" title={title}>
-        {title}
+      <S.Title role="heading" title={login}>
+        {login}
       </S.Title>
-      <S.Subtitle title={subtitle}>{subtitle}</S.Subtitle>
+      <S.Subtitle title={description}>{description}</S.Subtitle>
       <S.AlignLocalSite>
         <S.Local>
           <S.Icon src="/img/icones/local.svg" alt="Icon local" />
-          <span>{local}</span>
+          <span>{location}</span>
         </S.Local>
         <S.Site>
           <S.Icon src="/img/icones/local.svg" alt="Icon site" />
-          <Link href={site}>
-            <a>{site}</a>
+          <Link href={websiteUrl}>
+            <a>{websiteUrl}</a>
           </Link>
           <S.VerifiedIcon>
             <ButtonTopic typeButton="verified">Verified</ButtonTopic>

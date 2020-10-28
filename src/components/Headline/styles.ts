@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div`
   display: flex;
+  justify-content: center;
   height: 10.1rem;
 `
 
@@ -17,6 +18,7 @@ export const Title = styled.div`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xlarge};
     color: ${theme.colors.black};
+    text-transform: capitalize;
   `}
 `
 

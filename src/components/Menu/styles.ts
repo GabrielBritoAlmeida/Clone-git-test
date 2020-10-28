@@ -11,18 +11,18 @@ const wrapperModifiers = {
   `
 }
 
+export const Container = styled.div`
+  margin-top: 2rem;
+`
+
 export const Wrapper = styled.ul`
-  display: flex;
-  justify-content: center;
-  width: 100%;
   border-bottom: 0.1rem solid #eee;
 `
 
 export const List = styled.ul`
   display: flex;
-  justify-content: flex-start;
-  width: 112rem;
-  min-width: 75rem;
+  justify-content: center;
+  margin-right: 26rem;
 `
 type ItemMenuProps = {
   active: boolean
