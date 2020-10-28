@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     min-width: 30rem;
     max-width: 30rem;
     padding: ${theme.spacings.small};
-    min-height: 27rem;
+    margin-top: 2rem;
   `};
 `
 

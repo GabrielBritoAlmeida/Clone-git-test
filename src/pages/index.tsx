@@ -29,25 +29,15 @@ const listMost = [
 
 const listPeople = [
   { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' },
-  { url: '/img/avatar.jpeg', link: 'teste/avatar' }
+  { url: '/img/avatar.jpeg', link: 'teste/avatar2' },
+  { url: '/img/avatar.jpeg', link: 'teste/avatar3' },
+  { url: '', link: 'teste/avatar13' },
+  { url: '/img/avatar.jpeg', link: 'teste/avatar4' },
+  { url: '/img/avatar.jpeg', link: 'teste/avatar5' },
+  { url: '', link: 'teste/avatar23' },
+  { url: '/img/avatar.jpeg', link: 'teste/avatar6' },
+  { url: '/img/avatar.jpeg', link: 'teste/avatar7' },
+  { url: '/img/avatar.jpeg', link: 'teste/avatar8' }
 ]
 
 const Home = ({ repos, orgs, menu }: HomeProps) => (
