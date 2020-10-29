@@ -19,6 +19,10 @@ Usei como base meu projeto de boilerplate, com pré configurações do Next JS, 
 
 Primeiro, execute o servidor de desenvolvimento:
 
+Rodar antes yarn ou npm install para baixar as dependências.
+
+Rotas : "/" e "/blog"
+
 ```bash
 npm run dev
 # ou
