@@ -97,7 +97,7 @@ const Home = ({ repos, orgs, menu }: HomeProps) => (
 )
 
 export async function getServerSideProps() {
-  const res = await fetch('https://api.github.com/orgs/facebook/repos')
+  const res = await fetch('https://api.github.com/orgs/facebook/repos?pages=1')
   const repos = await res.json()
 
   const resOrg = await fetch('https://api.github.com/orgs/facebook')

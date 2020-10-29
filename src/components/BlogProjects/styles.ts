@@ -50,8 +50,6 @@ export const ButtonLayout = styled.button`
 `
 
 export const BoxButton = styled.div`
-  max-width: 130rem;
-
   display: flex;
   justify-content: center;
   margin-top: 18rem;
