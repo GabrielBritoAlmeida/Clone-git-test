@@ -24,6 +24,10 @@ export const Colum = styled.div`
   margin-top: 2rem;
 `
 
+export const ColumRepos = styled.div`
+  display: block;
+`
+
 export const AlignBox = styled.div`
   display: block;
   margin-left: 4.2rem;

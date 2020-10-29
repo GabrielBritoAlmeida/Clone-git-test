@@ -1,14 +1,22 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const WrapperAvatar = styled.div`
-  background-color: #eee;
-  height: 4.7rem;
-  width: 4.7rem;
-  border-radius: 50%;
+type ImageProps = {
+  size: string
+}
+
+export const WrapperAvatar = styled.div<ImageProps>`
+  ${({ size }) => css`
+    background-color: #eee;
+    height: ${size};
+    width: ${size};
+    border-radius: 50%;
+  `}
 `
 
-export const Image = styled.img`
-  height: 4.7rem;
-  width: 4.7rem;
-  border-radius: 50%;
+export const Image = styled.img<ImageProps>`
+  ${({ size }) => css`
+    height: ${size};
+    width: ${size};
+    border-radius: 50%;
+  `}
 `

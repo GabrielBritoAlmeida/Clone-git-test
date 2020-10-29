@@ -74,7 +74,6 @@ export const Description = styled.div`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.small};
     color: ${theme.colors.secondary};
-    height: 2rem;
   `}
 `
 

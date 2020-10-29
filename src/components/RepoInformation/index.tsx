@@ -87,7 +87,8 @@ const RepoInformation = ({
     </S.Align>
     <S.AlignBoxRepo>
       <S.Language>
-        <S.IconLanguage colorIcon={handleColor(language)} /> {language}
+        <S.IconLanguage colorIcon={handleColor(language || 'javascript')} />
+        {language || 'javascript'}
       </S.Language>
       {!!mit && (
         <S.Mit>
