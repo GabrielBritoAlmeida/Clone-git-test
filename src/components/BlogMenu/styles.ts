@@ -12,10 +12,12 @@ export const Logo = styled.img`
   width: 15.6rem;
   height: 5rem;
   margin-left: 5rem;
+  cursor: pointer;
 `
 
 export const MenuRight = styled.div`
   display: flex;
+  margin-right: 4rem;
 `
 
 export const ItemMenuRight = styled.div`

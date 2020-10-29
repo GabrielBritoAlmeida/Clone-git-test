@@ -5,7 +5,9 @@ import BlogMenu from '../BlogMenu'
 const BlogHeader = () => (
   <S.Wrapper>
     <BlogMenu />
-    <div>Texto</div>
+    <S.BoxText>
+      <S.Text>Empowering community through open source technology</S.Text>
+    </S.BoxText>
   </S.Wrapper>
 )
 
