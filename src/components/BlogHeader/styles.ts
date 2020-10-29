@@ -19,7 +19,7 @@ export const BoxText = styled.div`
   width: 50rem;
   flex-wrap: wrap;
 
-  position: sticky;
+  position: absolute;
   left: 15%;
   top: 26%;
 `

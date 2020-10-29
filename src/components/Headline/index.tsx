@@ -31,7 +31,7 @@ const Headline = ({
         </S.Local>
         <S.Site>
           <S.Icon src="/img/icones/local.svg" alt="Icon site" />
-          <Link href={blog}>
+          <Link href={'/blog'}>
             <a>{blog}</a>
           </Link>
           <S.VerifiedIcon>
